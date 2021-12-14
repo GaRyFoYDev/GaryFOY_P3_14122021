@@ -4,8 +4,10 @@
   "description": "P3 OC Gary FOY",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "Gary FOY",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
