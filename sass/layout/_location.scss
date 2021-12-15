@@ -1,0 +1,10 @@
+.location {
+  @include center;
+  column-gap: 10px;
+  background-color: rgb(234, 234, 234);
+  padding: 15px;
+  font-size: 0.9rem;
+
+  &__city {
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+p {
+  font-family: $textFont;
+}
+
+h2 {
+  @extend p;
+}
+
+h3 {
+  @extend p;
+}
