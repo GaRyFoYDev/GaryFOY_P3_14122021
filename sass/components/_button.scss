@@ -14,4 +14,10 @@
     rgba(147, 86, 220, 1) 77%
   );
   box-shadow: $shadow;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: $shadowDark;
+  }
 }

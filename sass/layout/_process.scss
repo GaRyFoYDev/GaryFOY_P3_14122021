@@ -1,19 +1,45 @@
 .process {
-  padding: 40px 20px;
+  padding: $paddingSection;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__box {
-    background-color: $backgroudGrey;
+    background-color: $backgroundGrey;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 10px;
+    padding: 23px;
+    margin: 20px;
+    border-radius: 20px;
     box-shadow: $shadow;
+    position: relative;
 
-    h3 {
-      font-weight: 400;
-      font-size: 1rem;
+    &:hover {
+      background-color: lighten($color-primary, 30%);
     }
+
+    &:hover i {
+      color: darken($color-primary, 5%);
+    }
+  }
+
+  &__number {
+    text-align: center;
+    color: $buttonColor;
+    background-color: $color-primary;
+    position: absolute;
+    left: -13px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    margin: 0 20px;
+    color: rgb(126, 126, 126);
   }
 }

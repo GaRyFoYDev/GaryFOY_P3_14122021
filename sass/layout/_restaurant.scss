@@ -1,63 +1,30 @@
 .restaurant {
-  @include padding;
-  background-color: $backgroudGrey;
-
-  &__container {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
-
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__card {
-    @include spacing;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    display: flex;
   }
 
   &__img {
     width: 100%;
-    height: 180px;
-    flex-basis: 75%;
-    object-fit: cover;
-    object-position: 80% 60%;
-    @include top-radius;
-    position: relative;
+    height: 200px;
   }
 
   &__new {
     position: absolute;
-    text-align: center;
-    color: darken($color: $color-tertiary, $amount: 50%);
-    background-color: $color-tertiary;
-    padding: 5px;
-    font-size: $small;
-    width: 65px;
-    top: 10px;
     right: 10px;
-    box-shadow: $shadow;
+    top: 15px;
+    background-color: $color-tertiary;
+    color: darken($color: $color-tertiary, $amount: 40%);
+    padding: 5px;
   }
 
-  &__info {
-    flex-basis: 25%;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: $shadow;
-    @include bottom-radius;
-    position: relative;
-
-    &--title {
-      font-size: $medium;
-      margin-bottom: 5px;
-    }
-
-    &--text {
-      font-size: 0.8rem;
-      font-weight: $thin;
-    }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

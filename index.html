@@ -23,7 +23,7 @@
         </a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <!-- Location -->
       <div class="location">
         <div class="location__icon">
@@ -48,102 +48,48 @@
           <div class="process__box">
             <div class="process__number">1</div>
             <div class="process__icon"><i class="fas fa-mobile-alt"></i></div>
-            <div class="process__title"><h3>Choisissez un restaurant</h3></div>
+            <p class="process__txt">Choisissez un restaurant</p>
           </div>
           <div class="process__box">
             <div class="process__number">2</div>
             <div class="process__icon"><i class="fas fa-list"></i></div>
-            <div class="process__title">
-              <h3>Composez votre menu</h3>
-            </div>
+            <p class="process__txt">Composez votre menu</p>
           </div>
           <div class="process__box">
             <div class="process__number">3</div>
             <div class="process__icon"><i class="fas fa-store"></i></div>
-            <div class="process__title"><h3>Dégustez au restaurant</h3></div>
+            <p class="process__txt">Dégustez au restaurant</p>
           </div>
         </div>
       </section>
       <!--Restaurant-->
       <section class="restaurant">
         <h2 class="restaurant__title">Restaurants</h2>
-        <div class="restaurant__container">
+        <div class="restaurant__cards">
           <a href="./menu1.html">
             <div class="restaurant__card">
+              <div class="restaurant__new">
+                <p>Nouveau</p>
+              </div>
               <img
                 class="restaurant__img"
                 src="./img/restaurants/la palette du gout.jpg"
                 alt="La palette du goût"
               />
-              <div class="restaurant__new">
-                <p>Nouveau</p>
-              </div>
-              <div class="restaurant__info">
+            </div>
+            <div class="restaurant__box">
+              <div class="restaurant__box--info">
                 <h2 class="restaurant__info--title">La palette du goût</h2>
                 <p class="restaurant__info--text">Ménilmontant</p>
-                <div class="restaurant__info--heart">
-                  <i class="fas fa-heart"></i>
-                </div>
               </div>
-            </div>
-          </a>
-          <a href="./menu2.html">
-            <div class="restaurant__card">
-              <img
-                class="restaurant__img restaurant__img--2"
-                src="./img/restaurants/la note enchantée.jpg"
-                alt="La note enchantée"
-              />
-              <div class="restaurant__new">
-                <p>Nouveau</p>
-              </div>
-              <div class="restaurant__info">
-                <h2 class="restaurant__info--title">La note enchantée</h2>
-                <p class="restaurant__info--text">Charonne</p>
-                <div class="restaurant__info--heart">
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./menu3.html">
-            <div class="restaurant__card">
-              <img
-                class="restaurant__img"
-                src="./img/restaurants/à la française.jpg"
-                alt="à la française"
-              />
-              <div class="restaurant__info">
-                <h2 class="restaurant__info--title">À la française</h2>
-                <p class="restaurant__info--text">Cité Rouge</p>
-                <div class="restaurant__info--heart">
-                  <i class="fas fa-heart"></i>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="./menu4.html">
-            <div class="restaurant__card">
-              <img
-                class="restaurant__img"
-                src="./img/restaurants/le délice des sens.jpg"
-                alt="Le délice des sens"
-              />
-              <div class="restaurant__info">
-                <h2 class="restaurant__info--title">Le délice des sens</h2>
-                <p class="restaurant__info--text">Folie-Méricourt</p>
-                <div class="restaurant__info--heart">
-                  <i class="fas fa-heart"></i>
-                </div>
+              <div class="restaurant__box--heart">
+                <i class="far fa-heart"></i>
               </div>
             </div>
           </a>
         </div>
       </section>
     </main>
-    <footer>
-      <h2 class="footer__title">ohmyfood</h2>
-      <ul class="footer__link"></ul>
-    </footer>
+    <footer></footer>
   </body>
 </html>
