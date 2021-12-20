@@ -1,6 +1,7 @@
 .location {
   width: 100%;
   @include center;
+  flex-direction: row;
   column-gap: 10px;
   background-color: rgb(234, 234, 234);
   padding: 15px;

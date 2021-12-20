@@ -1,14 +1,9 @@
 .explorer {
   @include center;
   text-align: center;
-  flex-direction: column;
   padding: 40px 0;
   background-color: $backgroundGrey;
   width: 100%;
-
-  &__title {
-    margin-bottom: 20px;
-  }
 
   &__txt {
     font-weight: 100;

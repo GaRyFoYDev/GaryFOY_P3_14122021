@@ -1,10 +1,17 @@
 .process {
-  padding: $paddingSection;
+  @include center;
   width: 100%;
+  padding: $paddingSection;
 
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    @include displayTitle;
   }
 
   &__box {
@@ -12,13 +19,14 @@
     display: flex;
     align-items: center;
     padding: 23px;
-    margin: 20px;
+    margin: 15px 20px;
     border-radius: 20px;
     box-shadow: $shadow;
     position: relative;
 
     &:hover {
       background-color: lighten($color-primary, 30%);
+      cursor: pointer;
     }
 
     &:hover i {
