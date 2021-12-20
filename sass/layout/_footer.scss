@@ -1,0 +1,31 @@
+.footer {
+  @include center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 20px 0;
+  background-color: rgb(54, 54, 54);
+
+  &__title {
+    font-family: $logoFont;
+    @include displayTitle;
+  }
+
+  &__links {
+    @include center;
+    align-items: flex-start;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-self: center;
+    }
+    li {
+      padding: 5px 15px;
+    }
+    a {
+      color: #fff;
+    }
+
+    i {
+      padding-right: 8px;
+    }
+  }
+}
