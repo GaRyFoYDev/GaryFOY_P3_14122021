@@ -12,3 +12,9 @@
     align-self: center;
   }
 }
+
+@mixin elipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

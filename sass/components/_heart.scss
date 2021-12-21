@@ -2,3 +2,18 @@
   font-size: 1.5rem;
   font-weight: 100;
 }
+
+.fa-heart:hover {
+  font-weight: bold;
+  background-image: linear-gradient(
+    40deg,
+    rgba(255, 121, 218, 1) 30%,
+    rgba(147, 86, 220, 1) 75%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition: 400ms;
+}
