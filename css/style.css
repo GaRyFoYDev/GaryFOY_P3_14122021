@@ -130,21 +130,21 @@ a:visited {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(fonts/Shrikhand-Regular.ttf);
+  src: url(/fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
-  src: url(fonts/Roboto-Regular.ttf);
+  src: url(/fonts/Roboto-Regular.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(fonts/Roboto-Thin.ttf);
+  src: url(/fonts/Roboto-Thin.ttf);
   font-weight: 100;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(fonts/Roboto-Bold.ttf);
+  src: url(/fonts/Roboto-Bold.ttf);
   font-weight: bold;
 }
 .header {
