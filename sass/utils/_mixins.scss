@@ -8,7 +8,7 @@
 @mixin displayTitle {
   align-self: flex-start;
   padding: 15px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 850px) {
     align-self: center;
   }
 }

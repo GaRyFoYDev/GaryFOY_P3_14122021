@@ -5,7 +5,8 @@
 
   &__container {
     @include center;
-    @media screen and (min-width: 1024px) {
+
+    @media screen and (min-width: 850px) {
       flex-direction: row;
       width: 100%;
     }
@@ -26,9 +27,9 @@
     box-shadow: $shadow;
     position: relative;
 
-    @media screen and (min-width: 1024px) {
-      flex-direction: row;
-      width: 280px;
+    @media screen and (min-width: 850px) {
+      padding: 23px 5px;
+      max-width: 243px;
     }
 
     &:hover {
