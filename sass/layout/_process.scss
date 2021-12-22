@@ -15,6 +15,7 @@
   }
 
   &__box {
+    width: 100%;
     background-color: $backgroundGrey;
     display: flex;
     align-items: center;
@@ -35,6 +36,7 @@
   }
 
   &__number {
+    @include center;
     text-align: center;
     color: $buttonColor;
     background-color: $color-primary;
