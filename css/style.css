@@ -169,11 +169,11 @@ a:visited {
 
 form {
   background: #f6f6f6;
+  width: 20%;
 }
 form input {
   border: none;
   background-color: #eaeaea;
-  width: 40%;
 }
 form input::placeholder {
   color: black;

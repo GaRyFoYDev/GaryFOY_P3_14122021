@@ -10,11 +10,12 @@
 
 form {
   background: $backgroundGrey;
+  width: 20%;
 
   input {
     border: none;
     background-color: rgb(234, 234, 234);
-    width: 40%;
+
     &::placeholder {
       color: black;
       text-align: center;
