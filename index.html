@@ -32,14 +32,17 @@
     </header>
     <main class="main">
       <!-- Location -->
-      <div class="location">
-        <div class="location__icon">
+      <form class="location">
+        <label for="location" class="location__icon">
           <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <div class="location__city">
-          <p>Paris, Belleville</p>
-        </div>
-      </div>
+        </label>
+        <input
+          type="text"
+          id="location"
+          class="location__city"
+          placeholder="Paris, Belleville"
+        />
+      </form>
       <!-- Explorer -->
       <section class="explorer">
         <h2 class="explorer__title">Réserver le menu qui vous convient</h2>
@@ -74,7 +77,7 @@
         <h2 class="restaurant__title">Restaurants</h2>
         <div class="restaurant__cards">
           <a href="./la-palette-du-gout.html">
-            <div class="restaurant__card">
+            <article class="restaurant__card">
               <div class="restaurant__img">
                 <div class="restaurant__new">
                   <p>Nouveau</p>
@@ -93,10 +96,10 @@
                   <i class="far fa-heart"></i>
                 </div>
               </div>
-            </div>
+            </article>
           </a>
           <a href="./la-note-enchantee.html">
-            <div class="restaurant__card">
+            <article class="restaurant__card">
               <div class="restaurant__img">
                 <div class="restaurant__new">
                   <p>Nouveau</p>
@@ -115,10 +118,10 @@
                   <i class="far fa-heart"></i>
                 </div>
               </div>
-            </div>
+            </article>
           </a>
           <a href="./a-la-francaise.html">
-            <div class="restaurant__card">
+            <article class="restaurant__card">
               <div class="restaurant__img">
                 <img
                   src="img/restaurants/a-la-francaise.jpg"
@@ -134,10 +137,10 @@
                   <i class="far fa-heart"></i>
                 </div>
               </div>
-            </div>
+            </article>
           </a>
           <a href="./le-delice-des-sens.html">
-            <div class="restaurant__card">
+            <article class="restaurant__card">
               <div class="restaurant__img">
                 <img
                   src="img/restaurants/le-delice-des-sens.jpg"
@@ -153,7 +156,7 @@
                   <i class="far fa-heart"></i>
                 </div>
               </div>
-            </div>
+            </article>
           </a>
         </div>
       </section>

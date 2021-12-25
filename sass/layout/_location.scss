@@ -7,3 +7,20 @@
   padding: 15px;
   font-size: $medium;
 }
+
+form {
+  background: $backgroundGrey;
+
+  input {
+    border: none;
+    background-color: rgb(234, 234, 234);
+    width: 40%;
+    &::placeholder {
+      color: black;
+      text-align: center;
+    }
+    &:focus {
+      outline-color: $color-primary;
+    }
+  }
+}

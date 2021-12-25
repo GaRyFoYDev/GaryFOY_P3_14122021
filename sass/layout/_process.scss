@@ -5,6 +5,8 @@
 
   &__container {
     @include center;
+    width: 90%;
+    font-size: 0.85rem;
 
     @media screen and (min-width: 850px) {
       flex-direction: row;

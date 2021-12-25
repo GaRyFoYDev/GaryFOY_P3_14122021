@@ -167,6 +167,22 @@ a:visited {
   font-size: 1rem;
 }
 
+form {
+  background: #f6f6f6;
+}
+form input {
+  border: none;
+  background-color: #eaeaea;
+  width: 40%;
+}
+form input::placeholder {
+  color: black;
+  text-align: center;
+}
+form input:focus {
+  outline-color: #9356dc;
+}
+
 .explorer {
   display: flex;
   align-items: center;
@@ -197,6 +213,8 @@ a:visited {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
+  font-size: 0.85rem;
 }
 @media screen and (min-width: 850px) {
   .process__container {
@@ -429,6 +447,11 @@ a:visited {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 280px) {
+  .menu__info--title h2 {
+    font-size: 1.2rem;
+  }
+}
 .menu__steps {
   width: 100%;
   padding: 20px 0;
@@ -451,6 +474,13 @@ a:visited {
   height: 3px;
   margin: -10px 0 10px 0;
 }
+@media screen and (max-width: 550px) {
+  .menu .ellipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .menu__box {
   width: 100%;
   background-color: #fff;
@@ -463,23 +493,9 @@ a:visited {
   font-weight: 400;
   margin-bottom: 5px;
 }
-@media screen and (max-width: 550px) {
-  .menu__box h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
 .menu__box p {
   font-weight: 100;
   font-size: 1rem;
-}
-@media screen and (max-width: 550px) {
-  .menu__box p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 .menu__box--info {
   width: 80%;
@@ -489,6 +505,11 @@ a:visited {
     width: 180px;
   }
 }
+@media screen and (max-width: 280px) {
+  .menu__box--info {
+    width: 150px;
+  }
+}
 .menu__box--txt {
   display: flex;
   justify-content: space-between;
@@ -496,10 +517,13 @@ a:visited {
   padding: 10px;
 }
 .menu__box--price {
-  text-align: right;
+  text-align: left;
   align-self: flex-end;
   width: 10%;
   transform: translateX(200%);
+}
+.menu__box--price p {
+  font-weight: 400;
 }
 .menu__box--anim {
   background-color: #99e2d0;

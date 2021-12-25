@@ -38,6 +38,9 @@
       @media screen and (max-width: 550px) {
         font-size: 1.5rem;
       }
+      @media screen and (max-width: 280px) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -63,6 +66,12 @@
     margin: -10px 0 10px 0;
   }
 
+  .ellipse {
+    @media screen and (max-width: 550px) {
+      @include ellipse;
+    }
+  }
+
   &__box {
     width: 100%;
     background-color: #fff;
@@ -74,23 +83,20 @@
       font-size: 1.1rem;
       font-weight: $regular;
       margin-bottom: 5px;
-      @media screen and (max-width: 550px) {
-        @include elipse;
-      }
     }
 
     p {
       font-weight: $thin;
       font-size: $medium;
-      @media screen and (max-width: 550px) {
-        @include elipse;
-      }
     }
 
     &--info {
       width: 80%;
       @media screen and (max-width: 550px) {
         width: 180px;
+      }
+      @media screen and (max-width: 280px) {
+        width: 150px;
       }
     }
 
@@ -101,10 +107,14 @@
       padding: 10px;
     }
     &--price {
-      text-align: right;
+      text-align: left;
       align-self: flex-end;
       width: 10%;
       transform: translateX(200%);
+
+      p {
+        font-weight: $regular;
+      }
     }
 
     &--anim {
