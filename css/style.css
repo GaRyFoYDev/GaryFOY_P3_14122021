@@ -584,7 +584,7 @@ form input:focus {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  cursor: pointer;
+  cursor: default;
   transition: 1.2s;
 }
 
