@@ -115,6 +115,10 @@
   transition: 600ms;
   visibility: visible;
 }
+.menu__box:not(:hover) .menu__box--price {
+  transform: translateX(200%);
+  transition: 600ms;
+}
 .menu__box:not(:hover) .menu__box--anim {
   transform: translateX(100%);
   transition: 600ms;
@@ -530,7 +534,6 @@ form input:focus {
   text-align: left;
   align-self: flex-end;
   width: 10%;
-  transform: translateX(200%);
 }
 .menu__box--price p {
   font-weight: 400;

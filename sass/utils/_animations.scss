@@ -127,6 +127,11 @@
     visibility: visible;
   }
 
+  &:not(:hover) &--price {
+    transform: translateX(200%);
+    transition: 600ms;
+  }
+
   &:not(:hover) &--anim {
     transform: translateX(100%);
     transition: 600ms;
