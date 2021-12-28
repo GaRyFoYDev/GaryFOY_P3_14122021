@@ -15,5 +15,15 @@
   -webkit-background-clip: text;
   color: transparent;
   cursor: default;
-  transition: 1.2s;
+  animation: heart 600ms ease-out forwards;
+}
+
+@keyframes heart {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 24px;
+  }
 }
