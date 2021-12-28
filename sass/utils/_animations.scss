@@ -126,4 +126,16 @@
     transition: 600ms;
     visibility: visible;
   }
+
+  &:not(:hover) &--anim {
+    transform: translateX(100%);
+    transition: 600ms;
+    visibility: hidden;
+  }
+
+  &:not(:hover) &--icon {
+    transform: rotate(-270deg);
+    transition: 600ms;
+    visibility: hidden;
+  }
 }

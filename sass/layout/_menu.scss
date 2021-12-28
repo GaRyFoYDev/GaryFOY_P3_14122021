@@ -123,17 +123,12 @@
       border-radius: 0 10px 10px 0;
       width: 20%;
       @include center;
-      transform: translateX(100%);
-      opacity: 0;
-      visibility: hidden;
     }
 
     &--icon {
       font-size: 2rem;
       color: white;
       background-color: $color-tertiary;
-      transform: rotate(-270deg);
-      visibility: hidden;
     }
   }
 }

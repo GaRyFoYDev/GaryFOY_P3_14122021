@@ -115,6 +115,16 @@
   transition: 600ms;
   visibility: visible;
 }
+.menu__box:not(:hover) .menu__box--anim {
+  transform: translateX(100%);
+  transition: 600ms;
+  visibility: hidden;
+}
+.menu__box:not(:hover) .menu__box--icon {
+  transform: rotate(-270deg);
+  transition: 600ms;
+  visibility: hidden;
+}
 
 * {
   margin: 0;
@@ -534,16 +544,11 @@ form input:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transform: translateX(100%);
-  opacity: 0;
-  visibility: hidden;
 }
 .menu__box--icon {
   font-size: 2rem;
   color: white;
   background-color: #99e2d0;
-  transform: rotate(-270deg);
-  visibility: hidden;
 }
 
 .order {
